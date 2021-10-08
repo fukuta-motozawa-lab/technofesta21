@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>テクノフェスタ</title>
+    <meta name="keywords" content="ページのキーワード1,2,3" />
+    <meta name="description" content="ページの説明" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+    <h1 align="center">テクノフェスタ</h1>
+    <p></p>
+
+    <div style="text-align: center">
+        <img src="photos/fig1.png" usemap="#ImageMap" alt="" />
+    </div>
+    <map name="ImageMap">
+        <area shape="circle" coords="200,74,59" href="https://www.google.com/" alt="" />
+        <area shape="circle" coords="457,73,62" href="https://www.youtube.com/watch?v=4RQXMTKMJgU" alt="" />
+        <area shape="circle" coords="462,320,59" href="#" alt="" />
+        <area shape="circle" coords="202,319,53" href="#" alt="" />
+    </map>
+    <!--
+    <div class="sample-box" style="text-align: center">
+        <img src="https://images.pexels.com/photos/1093946/pexels-photo-1093946.jpeg?auto=compress&cs=tinysrgb&h=350" />
+        <div class="youtube">
+            <img src="https://img.icons8.com/color/50/000000/youtube-play.png">
+        </div>
+    </div>
+    -->
+
+    <div class="java" style="text-align: center; position: relative;">
+        <img id="mypic" src="photos/2-w.JPG" width="800" height="600">
+        <div class="left" style="position: absolute; top: 85%; right: 60%;">
+            <input type="button" value="左" onclick="go_left()">
+        </div>
+        <div class="right" style="position: absolute; top: 85%; left: 60%;">
+            <input type="button" value="右" onclick="go_right()">
+        </div>
+        <div class="forward" style="position: absolute; top: 85%; left: 48%;">
+            <input type="button" value="進む" onclick="go_forward()">
+        </div>
+        <div class="backward" style="position: absolute; top: 94%; left: 48%;">
+            <input type="button" value="戻る" onclick="go_backward()">
+        </div>
+        <script>
+            var pics_src = new Array("photos/2-n.jpg", "photos/2-e.jpg", "photos/2-s.jpg","photos/2-w.jpg","photos/3-s.jpg");
+            var num = 0;
+            var num2 = 0;
+
+            function go_forward() {
+                document.getElementById("mypic").src = pics_src[0];
+            }
+
+            function go_left() {
+                document.getElementById("mypic").src = pics_src[1];
+            }
+
+            function go_right() {
+                document.getElementById("mypic").src = pics_src[2];
+            }
+
+            function go_backward() {
+                document.getElementById("mypic").src = pics_src[3];
+            }
+
+            /*
+            function go_forward() {
+                if (num == 2) {
+                    num = 0;
+                }
+                else {
+                    num++;
+                }
+                document.getElementById("mypic").src = pics_src[num];
+            }
+
+            function left() {
+                if (num == 0) {
+                    num = 2;
+                }
+                else {
+                    num--;
+                }
+                document.getElementById("mypic").src = pics_src[num];
+            }*/
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .sample-box {
+        position: relative;
+    }
+
+    .youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        position: absolute;
+        top: 80%;
+        left: 60%;
+    }
+
+</style>
