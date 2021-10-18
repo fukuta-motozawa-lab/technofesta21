@@ -26,8 +26,9 @@ body {
   margin-top: 35px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 32px;
+  font-size: 50px;
   border: 0px none;
+  color: aqua;
 }
 
 .contents-wrapper-inner {
@@ -38,30 +39,51 @@ body {
 
 .content-left {
   width: 500px;
-  position: left;
-  border: 0px none;
+  border: 10px none;
+  margin-left: -100px;
+  align-self: left;
 }
 
 .face-photo {
-  width: 400x;
-  height: 400px;
+  width: 430x;
+  /*height: 400px;*/
   margin-bottom: 20px;
   border: 0px none;
-  text-align: left;
+  align-self: left;
 }
 
 .profile {
   margin-bottom: 40px;
   margin-left: 20px;
   border: 0px none;
+  text-align: center;
+  font-weight: 600;
 }
 
 .content-right {
-  width: 600px;
-  text-align: right;
+  position: right;
+  width: fit-content;
+  align-self: right;
   border: 0px none;
+  margin-left: 20px;
 }
 
 .content-center {
   width: 200px;
+}
+
+.intro {
+  font-size: 28px;
+}
+
+.vrtour {
+  text-align: center;
+  border: 0px none;
+}
+
+.welcome {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 3px dashed #333333;
+  font-weight: bold;
 }
