@@ -58,14 +58,19 @@ body {
   border: 0px none;
   text-align: center;
   font-weight: 600;
+  font-size: x-large;
+  font-family: sans-serif;
 }
 
 .content-right {
   position: right;
-  width: fit-content;
+  width: 1000px;
   align-self: right;
   border: 0px none;
   margin-left: 20px;
+  font-weight: 600;
+  font-size: large;
+  font-family: sans-serif;
 }
 
 .content-center {
@@ -82,6 +87,12 @@ body {
 }
 
 .welcome {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "sans-serif";
+  margin: auto;
+  text-align: left;
+  width: 1200px;
   padding: 20px;
   margin-bottom: 20px;
   border: 3px dashed #333333;
